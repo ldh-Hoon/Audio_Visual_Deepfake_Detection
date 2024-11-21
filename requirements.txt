@@ -1,0 +1,8 @@
+librosa
+pydub
+opencv-python
+torch
+numpy
+ffmpeg
+av
+einops

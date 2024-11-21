@@ -1,0 +1,72 @@
+=========================================================================================================
+Layer (type:depth-idx)                                  Output Shape              Param #
+=========================================================================================================
+AVT_MAMBA_AV                                            [1, 2]                    --
+├─ViT: 1-1                                              [1, 1024]                 208,898
+│    └─Sequential: 2-1                                  [1, 200, 1024]            --
+│    │    └─Rearrange: 3-1                              [1, 200, 37632]           --
+│    │    └─LayerNorm: 3-2                              [1, 200, 37632]           75,264
+│    │    └─Linear: 3-3                                 [1, 200, 1024]            38,536,192
+│    │    └─LayerNorm: 3-4                              [1, 200, 1024]            2,048
+│    └─Dropout: 2-2                                     [1, 201, 1024]            --
+│    └─Transformer: 2-3                                 [1, 201, 1024]            --
+│    │    └─ModuleList: 3-15                            --                        (recursive)
+│    │    └─Dropout: 3-6                                [1, 201, 1024]            --
+│    │    └─ModuleList: 3-15                            --                        (recursive)
+│    │    └─Dropout: 3-8                                [1, 201, 1024]            --
+│    │    └─ModuleList: 3-15                            --                        (recursive)
+│    │    └─Dropout: 3-10                               [1, 201, 1024]            --
+│    │    └─ModuleList: 3-15                            --                        (recursive)
+│    │    └─Dropout: 3-12                               [1, 201, 1024]            --
+│    │    └─ModuleList: 3-15                            --                        (recursive)
+│    │    └─Dropout: 3-14                               [1, 201, 1024]            --
+│    │    └─ModuleList: 3-15                            --                        (recursive)
+│    │    └─Dropout: 3-16                               [1, 201, 1024]            --
+│    │    └─LayerNorm: 3-17                             [1, 201, 1024]            2,048
+│    └─Identity: 2-4                                    [1, 1024]                 --
+├─ViT_audio: 1-2                                        [1, 1024]                 34,818
+│    └─Sequential: 2-5                                  [1, 30, 1024]             --
+│    │    └─Rearrange: 3-18                             [1, 30, 400]              --
+│    │    └─LayerNorm: 3-19                             [1, 30, 400]              800
+│    │    └─Linear: 3-20                                [1, 30, 1024]             410,624
+│    │    └─LayerNorm: 3-21                             [1, 30, 1024]             2,048
+│    └─Dropout: 2-6                                     [1, 31, 1024]             --
+│    └─Transformer: 2-7                                 [1, 31, 1024]             --
+│    │    └─ModuleList: 3-32                            --                        (recursive)
+│    │    └─Dropout: 3-23                               [1, 31, 1024]             --
+│    │    └─ModuleList: 3-32                            --                        (recursive)
+│    │    └─Dropout: 3-25                               [1, 31, 1024]             --
+│    │    └─ModuleList: 3-32                            --                        (recursive)
+│    │    └─Dropout: 3-27                               [1, 31, 1024]             --
+│    │    └─ModuleList: 3-32                            --                        (recursive)
+│    │    └─Dropout: 3-29                               [1, 31, 1024]             --
+│    │    └─ModuleList: 3-32                            --                        (recursive)
+│    │    └─Dropout: 3-31                               [1, 31, 1024]             --
+│    │    └─ModuleList: 3-32                            --                        (recursive)
+│    │    └─Dropout: 3-33                               [1, 31, 1024]             --
+│    │    └─LayerNorm: 3-34                             [1, 31, 1024]             2,048
+│    └─Identity: 2-8                                    [1, 1024]                 --
+├─Mamba: 1-3                                            [1, 1024, 2]              --
+│    └─ModuleList: 2-9                                  --                        --
+│    │    └─ResidualBlock: 3-35                         [1, 1024, 2]              254
+│    │    └─ResidualBlock: 3-36                         [1, 1024, 2]              254
+│    │    └─ResidualBlock: 3-37                         [1, 1024, 2]              254
+│    │    └─ResidualBlock: 3-38                         [1, 1024, 2]              254
+├─Mamba: 1-4                                            [1, 1024, 2]              --
+│    └─ModuleList: 2-10                                 --                        --
+│    │    └─ResidualBlock: 3-39                         [1, 1024, 2]              254
+│    │    └─ResidualBlock: 3-40                         [1, 1024, 2]              254
+│    │    └─ResidualBlock: 3-41                         [1, 1024, 2]              254
+│    │    └─ResidualBlock: 3-42                         [1, 1024, 2]              254
+├─Linear: 1-5                                           [1, 2]                    10
+=========================================================================================================
+Total params: 140,038,430
+Trainable params: 140,038,430
+Non-trainable params: 0
+Total mult-adds (M): 139.96
+=========================================================================================================
+Input size (MB): 15.08
+Forward/backward pass size (MB): 171.82
+Params size (MB): 559.18
+Estimated Total Size (MB): 746.07
+=========================================================================================================

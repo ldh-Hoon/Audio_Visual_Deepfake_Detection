@@ -1,0 +1,13 @@
+{
+    "CNN_LSTM_each_AV": 0.704,
+    "CNN_LSTM_cross_attention_AV": 0.712,
+    "CNN_BiMAMBA_each_AV": 0.528,
+    "CNN_BiMAMBA_MHA_AV": 0.618,
+    "CNN_Transformer_AV": 0.65,
+    "MeseInception_AV": 0.536,
+    "Resnet_LSTM_AV": 0.518,
+    "KAN_CNN_LSTM_each_AV": 0.508,
+    "KAN_CNN_Transformer_AV": 0.524,
+    "AVT_DWF_AV": 0.5,
+    "CNN_LSTM_V": 0.5
+}

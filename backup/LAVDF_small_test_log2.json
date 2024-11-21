@@ -1,0 +1,6 @@
+{
+    "AVT_DWF_AV": 0.5,
+    "CNN_LSTM_V": 0.5,
+    "AVT_MAMBA_AV": 0.56,
+    "CNN_BiMAMBA_AV": 0.702
+}
