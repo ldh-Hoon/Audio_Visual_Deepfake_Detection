@@ -1,3 +1,10 @@
+"""
+This code is modified based on
+
+https://github.com/SYSU-DISG/AVoiD-DF
+"""
+
+
 import copy
 from functools import partial
 from collections import OrderedDict
