@@ -9,5 +9,5 @@
     "KAN_CNN_LSTM_each_AV": 0.534,
     "KAN_CNN_Transformer_AV": 0.35,
     "AVT_DWF_AV": 0.52,
-    "CNN_LSTM_V": 0.52
+    "CNN_LSTM_V": 0.48
 }
