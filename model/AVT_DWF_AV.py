@@ -1,3 +1,11 @@
+'''
+This code is modified based on
+https://github.com/raining-dev/AVT2-DWF/blob/main/models/model.py
+
+'''
+
+
+
 import torch
 from torch import nn
 

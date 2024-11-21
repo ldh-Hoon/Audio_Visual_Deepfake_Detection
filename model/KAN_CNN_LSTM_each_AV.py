@@ -1,3 +1,9 @@
+"""
+This code ReLUKAN is modified based on
+https://github.com/quiqi/relu_kan/blob/main/torch_relu_kan.py
+
+"""
+
 import numpy as np
 import torch
 import torch.nn as nn

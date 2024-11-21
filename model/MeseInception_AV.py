@@ -1,10 +1,7 @@
 '''
-# author: Zhiyuan Yan
-# email: zhiyuanyan@link.cuhk.edu.cn
-# date: 2023-0706
-
 The code is mainly modified from the below link:
 https://github.com/HongguLiu/MesoNet-Pytorch
+
 '''
 import torch
 import torch.nn as nn
